@@ -5,6 +5,7 @@ import './App.css';
 import Home from "./components/Home/Home";
 import About from "./components/About/About"
 import Navbar from "./components/Navbar";
+import Resume from "./components/Resume/ResumeNew"
 import { 
   BrowserRouter as Router,
   Routes,
@@ -36,6 +37,7 @@ function App() {
           <Route path="/" element={<Home/>} />
           <Route path="/about" element={<About/>} />
           <Route path="/project" element={<Projects/>} />
+          <Route path="/resume" element={<Resume />} />
         </Routes>
       </div>
 
