@@ -3,6 +3,7 @@ import Preloader from "../src/components/Pre"
 // import logo from './logo.svg';
 import './App.css';
 import Home from "./components/Home/Home";
+import About from "./components/About/About"
 import Navbar from "./components/Navbar";
 import { 
   BrowserRouter as Router,
@@ -32,6 +33,7 @@ function App() {
         <ScrollToTop/>
         <Routes>
           <Route path="/" element={<Home/>} />
+          <Route path="/about" element={<About/>} />
         </Routes>
       </div>
 
