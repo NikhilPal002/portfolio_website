@@ -3,6 +3,7 @@ import Preloader from "../src/components/Pre"
 // import logo from './logo.svg';
 import './App.css';
 import Home from "./components/Home/Home";
+import Navbar from "./components/Navbar";
 import { 
   BrowserRouter as Router,
   Routes,
@@ -11,8 +12,7 @@ import {
 } from 'react-router-dom';
 import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
-// import "bootstrap/dist/css/bootstrap.min.css";
-import { Navbar } from 'react-bootstrap';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   const [load, upadateLoad] = useState(true);
