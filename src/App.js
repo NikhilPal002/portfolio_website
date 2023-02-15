@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Preloader from "../src/components/Pre"
-// import logo from './logo.svg';
 import './App.css';
 import Home from "./components/Home/Home";
 import About from "./components/About/About"
@@ -10,7 +9,7 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  // Navigate
+  Navigate
 } from 'react-router-dom';
 import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
@@ -38,6 +37,7 @@ function App() {
           <Route path="/about" element={<About/>} />
           <Route path="/project" element={<Projects/>} />
           <Route path="/resume" element={<Resume />} />
+          <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
       </div>
 
